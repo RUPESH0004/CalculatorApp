@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+}
+
+.main {
+    background-color: #ffffff; /* White background for calculator */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 300px; /* Fixed width for the calculator */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.display {
+    background-color: #222; /* Dark background for display */
+    padding: 20px;
+}
+
+.display-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    color: #ffffff; /* White text */
+    background: none; /* No background */
+    border: none; /* No border */
+    text-align: right; /* Align text to the right */
+}
+
+.buttons {
+    padding: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between; /* Evenly space buttons */
+    margin-bottom: 10px; /* Space between lines */
+}
+
+.button, .clear, .cut, .equals {
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 5px; /* Space between buttons */
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff; /* Blue background for buttons */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.button:hover, .clear:hover, .cut:hover, .equals:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.operator {
+    background-color: #28a745; /* Green for operators */
+}
+
+.operator:hover {
+    background-color: #218838; /* Darker green on hover */
+}
